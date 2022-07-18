@@ -15,11 +15,11 @@ const barData = fetch("/data.json")
   // Value as percentage to set height
   const barHeight = Math.floor((val/166)*100) * 2;
 
-  const day = ` <div class="day">
-                  <li> ${weekDay}</li> 
-                  <div class="amount ${weekDay}" style="height:${barHeight}%;">
-                    <div class="value">£${val}</div>
-                </div>
+  const day = `   
+                <li class="day"> ${weekDay}
+                      <span class="amount ${weekDay}" style="height:${barHeight}%;"></span>
+                      <span class="value">£${val}</span>
+                </li> 
                 `;
 
  ul.innerHTML += day;
