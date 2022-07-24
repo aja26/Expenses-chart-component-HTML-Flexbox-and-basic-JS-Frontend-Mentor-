@@ -101,7 +101,7 @@ article ul .day{
 .day .value{
     display: none;
     position: absolute;
-    top: -3rem;
+    top: -4rem;
     left: -13px;
    
 }
