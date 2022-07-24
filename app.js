@@ -17,9 +17,10 @@ const barData = fetch("/data.json")
 
   const day = `   
                 <li class="day"> ${weekDay}
-                      <span class="amount ${weekDay}" style="height:${barHeight}%;"></span>
-                      <span class="value">£${val}</span>
-                </li> 
+                      <span class="amount ${weekDay}" style="height:${barHeight}%;">
+                         <p class="value">£${val}</p>
+                      </span>
+                  </li> 
                 `;
 
  ul.innerHTML += day;
