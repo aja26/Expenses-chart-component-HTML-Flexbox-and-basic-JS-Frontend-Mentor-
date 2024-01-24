@@ -35,12 +35,16 @@ setTimeout(() => {
 function setToday(){
 let today = new Date().getDay();
 const days = document.querySelectorAll('.amount');
-currentDay = weekdays.length - 1;
 
-  if(today === 0){
-    days[currentDay].classList.add('active');
-  } else{ 
-    days[today === currentDay].classList.add('active');
-  }
+if(today === 0){
+  currentDay = days[today];
+} else if (today > 6){
+  currentDay = days[today - 1];
+} else {
+  currentDay = days[today -1];
 }
 
+
+console.log(today);
+currentDay.classList.add('active');
+}
