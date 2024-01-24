@@ -40,7 +40,7 @@ currentDay = weekdays.length - 1;
   if(today === 0){
     days[currentDay].classList.add('active');
   } else{ 
-    days[today -1].classList.add('active');
+    days[today === today -1].classList.add('active');
   }
 }
 
