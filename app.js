@@ -29,7 +29,7 @@ const barData = fetch("/data.json")
 
 setTimeout(() => {
   setToday();
-}, 400);
+}, 1000);
 
 // Add todays .class to turn correct day on bar chart green
 function setToday(){
