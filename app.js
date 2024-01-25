@@ -38,16 +38,11 @@ const days = document.querySelectorAll('.amount');
 
 if(today === 0){
   currentDay = days[today];
-  console.log(1);
 } else if (today > 6){
   currentDay = days[today - 1];
-  console.log(2);
 } else {
   currentDay = days[today -1];
-  console.log(3);
 }
 
-
-console.log(today);
 currentDay.classList.add('active');
 }
