@@ -38,7 +38,7 @@ const days = document.querySelectorAll('.amount');
 
 if(today === 0){
   currentDay = days[today];
-  console.log(1);
+  console.log(1, days);
 } else if (today > 6){
   currentDay = days[today - 1];
    console.log(2);
