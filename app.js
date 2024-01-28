@@ -33,18 +33,15 @@ setTimeout(() => {
 
 // Add todays .class to turn correct day on bar chart green
 function setToday(){
-let today = new Date().getDay() +1;
+let today = new Date().getDay();
 const days = document.querySelectorAll('.amount');
 
 if(today === 0){
   currentDay = days[6];
-  console.log(1, days);
 } else if (today > 6){
   currentDay = days[today - 1];
-   console.log(2);
 } else {
   currentDay = days[today -1];
-   console.log(3);
 }
 
 currentDay.classList.add('active');
